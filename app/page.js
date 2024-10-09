@@ -1,95 +1,121 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+	
+
+  return (
+    <section id="home" class="welcome-hero">
+
+			
+			<div class="container">
+				<div class="welcome-hero-txt">
+					<h2>get your desired car in resonable price</h2>
+				
+					<button  >cars</button>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="model-search-content">
+							<div class="row">
+								<div class="col-md-offset-1 col-md-2 col-sm-12">
+									
+									<div class="single-model-search">
+										<h2>body style</h2>
+										<div class="model-select-icon">
+											<select class="form-control">
+
+											  	<option value="default">style</option>
+
+											  	<option value="sedan">sedan</option>
+
+											  	<option value="van">van</option>
+											  	<option value="roadster">roadster</option>
+
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-offset-1 col-md-2 col-sm-12">
+									<div class="single-model-search">
+										<h2>select make</h2>
+										<div class="model-select-icon">
+											<select class="form-control">
+
+											  	<option value="default">make</option>
+
+											  	<option value="toyota">toyota</option>
+
+											  	<option value="holden">holden</option>
+											  	<option value="maecedes-benz">maecedes-benz.</option>
+
+											</select>
+										</div>
+									</div>
+									<div class="single-model-search">
+										<h2>car condition</h2>
+										<div class="model-select-icon">
+											<select class="form-control">
+
+											  	<option value="default">condition</option>
+
+											  	<option value="something">something</option>
+
+											  	<option value="something">something</option>
+											  	<option value="something">something</option>
+
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-offset-1 col-md-2 col-sm-12">
+									<div class="single-model-search">
+										<h2>select model</h2>
+										<div class="model-select-icon">
+											<select class="form-control">
+
+											  	<option value="default">model</option>
+
+											  	<option value="kia-rio">kia-rio</option>
+
+											  	<option value="mitsubishi">mitsubishi</option>
+											  	<option value="ford">ford</option>
+
+											</select>
+										</div>
+									</div>
+									<div class="single-model-search">
+										<h2>select price</h2>
+										<div class="model-select-icon">
+											<select class="form-control">
+
+											  	<option value="default">price</option>
+
+											  	<option value="$0.00">$0.00</option>
+
+											  	<option value="$0.00">$0.00</option>
+											  	<option value="$0.00">$0.00</option>
+
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 col-sm-12">
+									<div class="single-model-search text-center">
+										<button class="welcome-btn model-search-btn" >
+											search
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
   );
 }
